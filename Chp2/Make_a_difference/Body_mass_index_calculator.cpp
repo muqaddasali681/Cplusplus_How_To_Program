@@ -25,9 +25,9 @@
 using namespace std;
 
 int main() {
-int weightInPounds;
-int heightInInches;
-int BMI;
+double weightInPounds;
+double heightInInches;
+double BMI;
 
 cout << "Enter your weight in pounds: ";
 cin >> weightInPounds;
