@@ -1,4 +1,18 @@
-// This is the second excercise of the Book " C++ How To Program by Deitel and Deitel"
+
+
+/**************************************************************************
+ *                                                                        *
+ * CHAPTER 2: Input/Output and Operators                                  *
+ *                                                                        *
+ * DISCLAIMER: This is the solved exercise solution of chapter 2 i.e.     *
+ * Input/Output and Operators. If you want to test any code then decomment*
+ * it and then run otherwise it will give you errors and you will not be  *
+ * able to run the code because many variables are initialized with the   *
+ *  same name so it will give you a bunch of errors.                      *
+ * Thank you very much!                                                   *
+ *************************************************************************/
+
+
 //Write a single C++ statement to accomplish each of the following
 //(assume that using declarations have not been used):
 //a) Declare the variables c, thisIsAVariable, q76354 and number to be of type int.
@@ -349,6 +363,40 @@ int main() {
 //2.28 (Digits of an Integer) Write a program that inputs a five-digit integer, separates the integer
 // into its digits and prints them separated by three spaces each. [Hint: Use the integer division and
 // modulus operators.] For example, if the user types in 42339, the program should print: 9  3  3  2  4
+
+// int integer;
+
+// cout << "Enter a 5 digit integer: ";
+// cin >> integer;
+
+// int digit1 , digit2, digit3, digit4, digit5;
+
+// digit1 = integer % 10;
+// integer /= 10;
+// digit2 = integer % 10;
+// integer /= 10;
+// digit3 = integer % 10;
+// integer /= 10;
+// digit4 = integer % 10;
+// integer /= 10;
+// digit5 = integer % 10;
+
+// cout << digit1 << "   " << digit2 << "   " << digit3 << "   " << digit4 << "   " << digit5 << endl;
+
+
+// (Table) Using the techniques of this chapter, write a program that calculates the perimeter 
+//and area of the square from 1 to 5cm. Use tabs to print the following neatly formatted table of values:
+
+
+// int square, perimeter, area;
+
+// cout << "Side of Square (cm)      " << "Perimeter of the square(cm)      " << "Area of the square(cm)" << endl;
+// for(square = 1; square <= 5; square++) {
+//   perimeter = 4 * square;
+//   area = square * square;
+//   cout << square << "                        " << perimeter <<"                                " << area << endl;
+// }
+
 
 
 
