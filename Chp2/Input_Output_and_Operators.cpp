@@ -63,11 +63,13 @@ int main() {
 // result = x*y*z;
 // cout << "The product is: " << result << endl;
 
+
 //2.5 Using the statements you wrote in Exercise 2.4, write a complete program that calculates
 //and displays the product of three integers. Add comments to the code where appropriate. [Note:
 //You’ll need to write the necessary using declarations.]
 
 //Sol: Already done that in 2.4
+
 
 //2.9 Write a single C++ statement or line that accomplishes each of the following:
 //a) Print the message "Enter three numbers".
@@ -103,23 +105,250 @@ int main() {
 
 //2.16 (Arithmetic) Write a program that asks the user to enter two numbers, obtains the two
 //numbers from the user and prints the sum, product, difference, and quotient of the two numbers.
-int a , b;
-int sum , product, difference, quotient;
+// int a , b;
+// int sum , product, difference, quotient;
 
-cout << "Enter two integers: ";
-cin >> a >> b;
+// cout << "Enter two integers: ";
+// cin >> a >> b;
 
-sum = a + b;
-difference = a - b;
-product = a * b;
-quotient = a / b;
+// sum = a + b;
+// difference = a - b;
+// product = a * b;
+// quotient = a / b;
 
-cout << "The sum is: " << sum << endl;
-cout << "The difference is: " << difference << endl;
-cout << "The product is: " << product << endl;
-cout << "The quotient is: " << quotient << endl;
+// cout << "The sum is: " << sum << endl;
+// cout << "The difference is: " << difference << endl;
+// cout << "The product is: " << product << endl;
+// cout << "The quotient is: " << quotient << endl;
+
+//2.17 (Printing) Write a program that prints the message "Welcome to C++ programming" on one line 
+//with each word separated by one space. Do this several ways:
+// a) Using one statement with two stream insertion operator.
+// b) Using one statement with four stream insertion operators.
+// c) Using two statements with one stream insertion operator each.
+
+// cout <<"Welcome to C++ programming" << endl;
+// cout <<"Welcome " << "to " << "C++ programming" << endl;
+// cout <<"Welcome to ";
+// cout <<"C++ programming";
+
+//2.18 (Comparing Integers) Write a program that asks the user to enter two integers, obtains the
+// numbers from the user, If the numbers are not equal, print the message "These numbers are not equal,"
+//then prints the smaller number followed by the words "is smaller."
+
+// int num1, num2;
+// cout << "Enter two integers: ";
+// cin >> num1 >> num2;
+// if(num1 != num2) {
+//     cout << "These numbers are not equal" << endl;
+//     if(num1 < num2) {
+//         cout << num1 << " is smaller." << endl;
+//     } else {
+//         cout << num2 << " is smaller." << endl;
+//     }
+// }
 
 
+//2.19 (Arithmetic, Smallest and Largest) Write a program that inputs three integers from the keyboard
+ //and prints the sum, average, product, smallest and largest of these numbers. 
+ //output should be like this:
+ //Input three different integers: 13 27 14
+// Sum is 54
+// Average is 18
+// Product is 4914
+// Smallest is 13
+// Largest is 27
+
+// int g, h, i;
+// int Sum;
+// int Average;
+// int Product;
+// int Smallest;
+// int Largest;
+// cout << "Input three different integers: ";
+// cin >> g >> h >> i;
+
+// Sum = g + h + i;
+// Average = (g + h +i)/3;
+// Product = g * h * i;
+// Smallest = min(g, min(h,i));
+// Largest = max(g, max(h,i));
+
+// cout << "Sum is " << Sum << endl;
+// cout << "Average is " << Average << endl;
+// cout << "Product is " << Product << endl;
+// cout << "Smallest is " << Smallest << endl;
+// cout << "Largest is " << Largest << endl;
+
+
+//2.20 (Diameter, Circumference and Area of a Circle) Write a program that reads in the radius of
+//a circle as an integer and prints the circle’s diameter, circumference and area. Use the constant value
+//3.14159 for π. Do all calculations in output statements. [Note: In this chapter, we’ve discussed only
+//integer constants and variables.
+
+// int radius;
+// int diameter;
+// int circumference;
+// int area;
+
+// cout << "ENter the radius of a circle: ";
+// cin >> radius;
+
+// diameter = 2 * radius;
+// circumference = 2 * 3.14159 * radius;
+// area = 3.14159 * radius * radius;
+
+// cout << "Diameter is: " << diameter << endl;
+// cout << "Circumference is: " << circumference << endl;
+// cout << "Area is: " << area << endl;
+
+  //2.21 (Displaying Large Letter with Asterisks) Write a program that prints C++
+//   cout << "  CCC  +      +  " << endl; 
+//   cout << " C     +      +  " << endl; 
+//   cout << "C    +++++  +++++  " << endl; 
+//   cout << " C     +      +  " << endl; 
+//   cout << "  CCC  +      +  " << endl; 
+
+//2.22 What does the following code print?
+// cout << "*\n**\n***\n****\n*****" << endl;
+// cout << "%%%%%\n$$$$\n###\n@@\n*\n";
+
+
+//2.23 (Largest and Smallest Integers) Write a program that reads in five integers and determines
+// and prints the largest and the smallest integers in the group. Use only the programming techniques
+// you learned in this chapter.
+
+// int v, w, x, y, z;
+// cout << "Enter 5 Integers: " << endl;
+// cin >> v >> w >> x >> y >> z;
+
+// int largest = v;
+// int smallest = v;
+
+// if (w > largest) {
+//     largest = w;
+// }
+// if (x > largest) {
+//     largest = x;
+// }
+// if (y > largest) {
+//     largest = y;
+// }
+// if (z > largest) {
+//     largest = z;
+// }
+
+// if (w < smallest) {
+//     smallest = w;
+// }
+// if (x < smallest) {
+//     smallest = x;
+// }
+// if (y < smallest) {
+//     smallest = y;
+// }
+// if (z < smallest) {
+//     smallest = z;
+// }
+
+// cout << "Largest integer is: " << largest << endl;
+// cout << "Smallest integer is: " << smallest << endl;
+
+
+//2.24 (Odd or Even) Write a program that reads in two integer and determines and prints whether
+// each integar is odd or even.as well as the sum o two integers is an odd number. [Hint: Use the modulus operator. An even number is a multiple of two. 
+// Any multiple of two leaves a remainder of zero when divided by 2.]
+
+// int number1, number2, sum;
+// cout << "Enter two integers: ";
+// cin >> number1 >> number2;
+
+// if(number1 % 2 == 0) {
+//     cout << number1 << " is even" << endl;
+// } else {
+//     cout << number1 << " is odd" << endl;
+// }
+
+// if(number2 % 2 == 0) {
+//     cout << number2 << " is even" << endl;
+// } else {
+//     cout << number2 << " is odd" << endl;
+// }
+
+// sum = number1 + number2;
+// if(sum % 2 == 0) {
+//     cout << sum << " is even" << endl;
+// } else {
+//     cout << sum << " is odd" << endl;
+// }
+
+
+// 2.25 (Multiples) Write a program that reads in three integers and determines and prints if the first 
+// two is a multiple of the third. [Hint: Use the modulus operator.]
+
+// int mult1, mult2, number;
+// cout << "Enter three integers: " << endl ;
+// cin >> mult1 >> mult2 >> number ;
+
+// if(number % mult1 == 0) {
+//     cout << "mult1 " << mult1 << " is the multiple of the number " << number << endl;
+// } else {
+//     cout << "mult1 " << mult1 << " is not the multiple of the number " << number << endl;
+// }
+
+// if(number % mult2 == 0) {
+//     cout << "mult2 " << mult2 << " is the multiple of the number " << number << endl;
+// } else {
+//     cout << "mult2 " << mult2 << " is not the multiple of the number " << number << endl;
+// }
+
+//2.26 (Checkerboard Pattern) Display the following checkerboard pattern with eight output
+//statements, then display the same pattern using as few statements as possible. 
+
+// cout << "* * * * * * * *" << endl;
+// cout << " * * * * * * * *" << endl;
+// cout << "* * * * * * * *" << endl;
+// cout << " * * * * * * * *" << endl;
+// cout << "* * * * * * * *" << endl;
+// cout << " * * * * * * * *" << endl;
+// cout << "* * * * * * * *" << endl;
+// cout << " * * * * * * * *" << endl;
+
+// for(int i=1; i<8; i++) {
+//     for(int j=1; j<8; j++) {
+//         if(i % 2 != 0){
+//             cout << "  *";
+//         } else{
+//             cout << " * " ;
+//         }    
+//     }
+//     cout << endl;
+// }
+
+//2.27 (Integer Equivalent of a Character) Here is a peek ahead. In this chapter you learned about
+// integers and the type int. C++ can also represent uppercase letters, lowercase letters and a 
+//considerable variety of special symbols. C++ uses small integers internally to represent each different
+ //character. The set of characters a computer uses and the corresponding integer representations for those
+// characters are called that computer’s character set. You can print a character by enclosing that
+ //character in single quotes, as with
+// cout << 'A'; // print an uppercase A
+// You can print the integer equivalent of a character using static_cast as follows:
+// cout << static_cast< int >( 'A' ); // print 'A' as an integer
+// This is called a cast operation (we formally introduce casts in Chapter 4). When the preceding
+// statement executes, it prints the value 65 (on systems that use the ASCII character set). Write a
+// program that prints the integer equivalent of a character typed at the keyboard. Store the input in a
+// variable of type char. Test your program  several times using uppercase letters, lowercase letters, 
+//digits and special characters (like $).
+
+// char alpha;
+// cout << "Enter an alphabet or special character: ";
+// cin >> alpha;
+
+// cout << static_cast < int >(alpha);
+
+//2.28 (Digits of an Integer) Write a program that inputs a five-digit integer, separates the integer
+// into its digits and prints them separated by three spaces each. [Hint: Use the integer division and
+// modulus operators.] For example, if the user types in 42339, the program should print: 9  3  3  2  4
 
 
 
