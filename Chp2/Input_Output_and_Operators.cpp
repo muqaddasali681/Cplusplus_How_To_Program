@@ -384,18 +384,18 @@ int main() {
 // cout << digit1 << "   " << digit2 << "   " << digit3 << "   " << digit4 << "   " << digit5 << endl;
 
 
-// (Table) Using the techniques of this chapter, write a program that calculates the perimeter 
+//2.29 (Table) Using the techniques of this chapter, write a program that calculates the perimeter 
 //and area of the square from 1 to 5cm. Use tabs to print the following neatly formatted table of values:
 
 
-// int square, perimeter, area;
+ int square, perimeter, area;
 
-// cout << "Side of Square (cm)      " << "Perimeter of the square(cm)      " << "Area of the square(cm)" << endl;
-// for(square = 1; square <= 5; square++) {
-//   perimeter = 4 * square;
-//   area = square * square;
-//   cout << square << "                        " << perimeter <<"                                " << area << endl;
-// }
+ cout << "Side of Square (cm)      " << "Perimeter of the square(cm)      " << "Area of the square(cm)" << endl;
+ for(square = 1; square <= 5; square++) {
+   perimeter = 4 * square;
+   area = square * square;
+   cout << square << "                        " << perimeter <<"                                " << area << endl;
+ }
 
 
 
