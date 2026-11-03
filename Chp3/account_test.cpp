@@ -10,7 +10,10 @@ int main() {
     cout << "Initial account name is : " << myAccount.getName();
     cout << "\nPlease enter the Account name: ";
     string theName;
-    
+    getline(cin, theName);
+    myAccount.setName(theName);
+
+    cout << "Name in object myAccount is: " << myAccount.getName() << endl;
 
 
     return 0;
