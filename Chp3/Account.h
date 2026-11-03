@@ -1,18 +1,25 @@
 #include <string>
-using namespace std;
+
 
 //str name;
 class Account {
 public:
-    void setName(string accountName) {
+
+    explicit Account(std::string accountName)
+    : name{accountName} {
+                           
+    }
+
+
+    void setName(std::string accountName) {
         name = accountName;
     }
 
-    string getName() const {
+    std::string getName() const {
         return name;
     }
 
     private:
-    string name;
+    std::string name;
 
 };
